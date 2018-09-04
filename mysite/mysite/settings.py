@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-from polls.models import Choice, Question  # Import the model classes we just wrote.
+from polls.models import Choice, Question
+
+# Import the model classes we just wrote.
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -32,7 +34,7 @@ ALLOWED_HOSTS = ['162.251.164.68']
 # Application definition
 
 INSTALLED_APPS = [
-    #'polls.apps.PollsConfig',
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
