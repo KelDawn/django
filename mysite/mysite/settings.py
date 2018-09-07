@@ -17,7 +17,7 @@ from polls.models import Choice, Question
 
 # No questions are in the system yet.
 Question.objects.all()
-# <QuerySet []>
+<QuerySet []>
 
 # Create a new Question.
 # Support for time zones is enabled in the default settings file, so
