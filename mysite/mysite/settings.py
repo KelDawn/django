@@ -17,7 +17,7 @@ from polls.models import Choice, Question
 
 # No questions are in the system yet.
 Question.objects.all()
-# <QuerySet []>
+<QuerySet []>
 
 # Create a new Question.
 # Support for time zones is enabled in the default settings file, so
@@ -28,7 +28,7 @@ from django.utils import timezone
 
 q = Question(question_text="What's new?", pub_date=timezone.now())
 # Save the object into the database. you have to call save() explicitly.
-    q.save
+q.save
 # now it has an ID.
 
 q.id
