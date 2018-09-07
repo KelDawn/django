@@ -36,9 +36,9 @@ q.id
 
 # Access model field values via Python attributes.
 q.question_text
-        "What's new?"
-    q.pub_date
-        datetime.datetime(2012, 2, 26, 13, 0, 0, 775217, tzinfo=<UTC>)
+    "What's new?"
+q.pub_date
+    datetime.datetime(2012, 2, 26, 13, 0, 0, 775217, tzinfo=<UTC>)
 
 # Change values by changing the attributes, then calling save().
     q.question_text = "What's up?"
@@ -46,7 +46,7 @@ q.question_text
 
 # objects.all() displays all the questions in the database.
     Question.objects.all()
-        <QuerySet [<Question: Question object (1)>]>
+    <QuerySet [<Question: Question object (1)>]>
         
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
