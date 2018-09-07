@@ -17,7 +17,7 @@ from polls.models import Choice, Question
 
 # No questions are in the system yet.
 Question.objects.all()
-    <QuerySet []>
+<QuerySet []>
 
 # Create a new Question.
 # Support for time zones is enabled in the default settings file, so
@@ -38,7 +38,7 @@ q.id
 q.question_text
     "What's new?"
 q.pub_date
-    datetime.datetime(2012, 2, 26, 13, 0, 0, 775217, tzinfo=<UTC>)
+datetime.datetime(2012, 2, 26, 13, 0, 0, 775217, tzinfo=<UTC>)
 
 # Change values by changing the attributes, then calling save().
     q.question_text = "What's up?"
@@ -46,7 +46,7 @@ q.pub_date
 
 # objects.all() displays all the questions in the database.
     Question.objects.all()
-    <QuerySet [<Question: Question object (1)>]>
+<QuerySet [<Question: Question object (1)>]>
         
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
