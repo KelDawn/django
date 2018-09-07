@@ -46,7 +46,7 @@ q.save()
 
 # objects.all() displays all the questions in the database.
 Question.objects.all()
-<QuerySet [<Question: Question object (1)>]>
+# <QuerySet [<Question: Question object (1)>]>
         
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
