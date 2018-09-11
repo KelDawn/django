@@ -10,7 +10,7 @@ def index(request):
     context = {
         'latest_question_list': latest_question_list,
     }
-    return render(request, 'polls/index.html', context>)
+    return render(request, 'polls/index.html', context)
     return HttpRespons(template.render(context, request))
     output = ', '.join([q.question_text for q in latest_question_list])
     return HttpResponse(output)
