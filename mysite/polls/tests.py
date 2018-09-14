@@ -5,7 +5,7 @@ from django.utils import timezone
 
 from .models import Question
 
-Class QuestionModelTests(Testcase):
+Class QuestionModelTests(TestCase):
 
     def test_was_published_recently_with_future_question(self):
         """
