@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import Http404
 from django.shortcuts import get_object_or_404, render
+from django.urls import reverse
+from dhango.views import generic
 from .models import Choice, Question
 
 
